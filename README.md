@@ -20,8 +20,6 @@
 
 ### Prerequisites
 
-#### Required
-
 - Go (_see go.mod for specific version_)
 - Container runtime
   - [Docker](https://www.docker.com/get-started/)
@@ -29,16 +27,12 @@
 - Compose - used to manage multi-container applications
   - [Docker Compose](https://docs.docker.com/compose/install/)
   - [Podman Compose](https://github.com/containers/podman-compose)
-
-#### Optional
-
-- [Air](https://github.com/cosmtrek/air) is used for hot-reload development
-  - install with `go install github.com/cosmtrek/air`
-- [Buf](https://buf.build/docs/ecosystem/cli-overview) is used for managing protobuf files
-  - install with `go install github.com/bufbuild/buf/cmd/buf`
-- [grpcurl](https://github.com/fullstorydev/grpcurl) is used for testing gRPC services
-  - install with `go install github.com/fullstorydev/grpcurl/cmd/grpcurl`
-- [softHSM](https://github.com/opendnssec/SoftHSMv2) is used to emulate hardware security (aka `PKCS #11`)
+- [Buf](https://buf.build/docs/ecosystem/cli-overview) is used for managing protobuf files.
+  Required for developing services.
+- _Optional_ [softHSM](https://github.com/opendnssec/SoftHSMv2) is used to emulate hardware security (aka `PKCS #11`)
+  This is used to develop for HSM modules.
+- _Optional_ [grpcurl](https://github.com/fullstorydev/grpcurl) is used for testing gRPC services
+- _Optional_ [Air](https://github.com/cosmtrek/air) is used for hot-reload development
 
 On macOS, these can be installed with [brew](https://docs.brew.sh/Installation)
 
